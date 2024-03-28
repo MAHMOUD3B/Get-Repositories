@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.repos-container {
+  width: 800px;
+  background-color: #ccc;
+  margin: 40px auto;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .get-repos {
+    background-color: #444;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input {
+      flex-grow: 1;
+      margin-right: 20px;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+
+      &:focus {
+        outline: 2px solid rgb(58, 209, 116);
+      }
+    }
+
+    .get-button {
+      padding: 10px 20px;
+      border: 1px solid rgb(58, 209, 116);
+      color: rgb(58, 209, 116);
+      cursor: pointer;
+      border-radius: 5px;
+      background-color: white;
+    }
+  }
+
+  .show-data {
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: #666;
+
+    > div {
+      margin-bottom: 20px;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    a {
+      display: block;
+      margin-bottom: 10px;
+      background-color: #68ff77;
+      color: black;
+      padding: 10px;
+      text-decoration: none;
+    }
+  }
+}
