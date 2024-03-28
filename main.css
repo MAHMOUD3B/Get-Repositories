@@ -4,10 +4,11 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
 }
 
 .repos-container {
-  width: 800px;
+  width: 750px;
   background-color: #ccc;
   margin: 40px auto;
   border-radius: 10px;
@@ -17,12 +18,12 @@ body {
     background-color: #444;
     padding: 20px;
     display: flex;
+    gap: 20px;
     align-items: center;
     justify-content: space-between;
 
     input {
       flex-grow: 1;
-      margin-right: 20px;
       border: none;
       border-radius: 5px;
       padding: 10px;
@@ -62,6 +63,24 @@ body {
       color: black;
       padding: 10px;
       text-decoration: none;
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  .repos-container {
+    width: 90%;
+  }
+}
+
+@media(max-width: 576px) {
+  .repos-container {
+    .get-repos {
+      flex-direction: column;
+
+      input {
+        width: 100%;
+      }
     }
   }
 }
